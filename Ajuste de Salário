@@ -1,0 +1,15 @@
+algoritmo "Projeto Salário"
+// Função : Aumento de 30% do salario
+// Autor : Lucas da Silva Santos
+// Data : 20/02/2022
+var
+salario : real
+inicio
+//ENTRADA DE DADOS
+Escreva("Informe seu salário: ")
+leia(salario)
+//PROCESSAMENTO
+salario <- salario * 1.3
+//SAÍDA
+Escreva("Seu salário corrigido é de: ",salario)
+fimalgoritmo
