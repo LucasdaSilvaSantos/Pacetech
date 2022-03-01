@@ -1,5 +1,5 @@
 algoritmo "Projeto Semana 4"
-//Função:Converter a Memperatura e a Moeda
+//FunÃ§Ã£o:Converter a Temperatura e a Moeda
 //Autor:Lucas da Silva Santos
 //Data: 01/03/2022
 var
@@ -23,35 +23,35 @@ repita
          escreval("Informar temperatura em Fahrenheit: ")
          leia(fahrenheit)
          celsius <- (fahrenheit-32)/1.8
-         escreval("A temperatura em Celsius é: ", celsius:4:1,"°C")
+         escreval("A temperatura em Celsius Ã©: ", celsius:4:1,"Â°C")
       senao
          se opcaoMenu1 = 2 entao
             escreval("Informar a temperatura em Celsius: ")
             leia(celsius)
             fahrenheit <- (celsius * 1.8) + 32
-            escreval("A temperatura em Fahrenheit é: ", fahrenheit:4:1,"°F")
+            escreval("A temperatura em Fahrenheit Ã©: ", fahrenheit:4:1,"Â°F")
          fimse
       fimse
    senao
       se opcaoMenu = 2 entao
-         escreval("1 - Converter de Dólar para Real")
-         escreval("2 - Converter de Real para Dólar")
+         escreval("1 - Converter de DÃ³lar para Real")
+         escreval("2 - Converter de Real para DÃ³lar")
          leia(opcaoMenu2)
          se opcaoMenu2 = 1 entao
-            escreval("Informe a cotação atual do Dólar:")
+            escreval("Informe a cotaÃ§Ã£o atual do DÃ³lar:")
             leia(valorDolar)
-            escreval("Informe quantos dólares você deseja comprar.")
+            escreval("Informe quantos dÃ³lares vocÃª deseja comprar.")
             leia(quantidadeDolar)
             valorReal <- valorDolar * quantidadeDolar
-            escreval("Você precisa de R$ ",valorReal:5:2," reais")
+            escreval("VocÃª precisa de R$ ",valorReal:5:2," reais")
          senao
             se opcaoMenu2 = 2 entao
-               escreval("Informe a cotação do Real:")
+               escreval("Informe a cotaÃ§Ã£o do Real:")
                leia(valorReal)
-               escreval("Informe quantos reais você deseja comprar.")
+               escreval("Informe quantos reais vocÃª deseja comprar.")
                leia(quantidadeReal)
                valorDolar <- valorReal * quantidadeReal
-               escreval("Você precisa de U$ ",valorDolar:5:2," dólares")
+               escreval("VocÃª precisa de U$ ",valorDolar:5:2," dÃ³lares")
             fimse
          fimse
       fimse
