@@ -1,12 +1,12 @@
 algoritmo "Projeto Semana 5"
-// Função :Converter e Dizer o horário da temperatura.
+// FunÃ§Ã£o :Converter e Dizer o horÃ¡rio da temperatura.
 // Autor :Lucas da Silva Santos
 // Data : 09/03/2022
 var
 opcaoMenu:literal
 temperatura, temperatura1:vetor[1..4] de real
 hora:vetor[1..4] de caracter
-i,j,k:inteiro
+i,j:inteiro
 aux,aux1:real
 aux2,parar:caracter
 procedimento mostrarMenu()
@@ -79,27 +79,27 @@ repita
    escolha opcaoMenu
    caso "1"
       para i de 1 ate 4 faca
-         escreval("Informe a ",i,"ª temperatura registrada.")
+         escreval("Informe a ",i,"Âª temperatura registrada.")
          leia(temperatura[i])
-         escreval("Informe o horário que a",i,"ª temperatura foi registrada (HH:MM)?")
+         escreval("Informe o horÃ¡rio que a",i,"Âª temperatura foi registrada (HH:MM)?")
          leia(hora[i])
       fimpara
       escreval(cTemperatura)
          ordenaC()
          para i de 1 ate 4 faca
-    escreval("Temperatura ",temperatura[i]," graus Celsius, às ",hora[i]," corresponde a ",temperatura1[i]:3:1," graus Fahrenheit")
+    escreval("Temperatura ",temperatura[i]," graus Celsius, Ã s ",hora[i]," corresponde a ",temperatura1[i]:3:1," graus Fahrenheit")
     fimpara
    caso "2"
       para i de 1 ate 4 faca
-         escreval("Informe a ",i,"ª temperatura registrada.")
+         escreval("Informe a ",i,"Âª temperatura registrada.")
          leia(temperatura[i])
-         escreval("Informe o horário que a",i,"ª temperatura foi registrada (HH:MM)?")
+         escreval("Informe o horÃ¡rio que a",i,"Âª temperatura foi registrada (HH:MM)?")
          leia(hora[i])
       fimpara
       escreval(fTemperatura)
         ordenaF()
        para i de 1 ate 4 faca
-    escreval("Temperatura ",temperatura[i]," graus Fahreheit, às ",hora[i]," corresponde a ",temperatura1[i]:3:1," graus Celsius")
+    escreval("Temperatura ",temperatura[i]," graus Fahreheit, Ã s ",hora[i]," corresponde a ",temperatura1[i]:3:1," graus Celsius")
     fimpara
    fimescolha
     escreval("Pressione qualquer tecla para continuar...")
